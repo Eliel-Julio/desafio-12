@@ -4,6 +4,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap'); 
 
+:root{
+    --cor-01:rgb(103, 75, 25);
+    --cor-02:rgb(215, 171, 95);
+    --cor-03: rgba(155, 109, 22, 0.816);
+}
+
 html{
     min-height: 100vh;
     padding: 0;
@@ -16,10 +22,14 @@ body{
     min-height: 100vh;
     background-color: rgb(209, 208, 208);
     header{
-        background-color: black;
+        background-color: var(--cor-01);
         color: white;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
         h1{
             text-align: center;
+            font-family: 'Passion One', Courier,monospace;
+            font-size: 8vw;
         }
         p{
             text-align: center;
@@ -27,7 +37,7 @@ body{
                 color: white;
                 text-decoration: none;
                 &:hover{
-                    color: rgba(155, 109, 22, 0.816);
+                    color: var(--cor-02);
                 }
             }
         }
@@ -38,8 +48,14 @@ body{
             padding-bottom: 10vh;
             padding-left: 30px;
             font-family: sriracha;
+            p{
+                font-size: 3vw;
+            }
             &.normal{
                 background-color: white;
+                p {
+                    margin-bottom: 20px;
+                }
             }
             &.imagem{
                 background-color: darkgray;
@@ -69,15 +85,15 @@ body{
         }
     }
     footer{
-        background-color: black;
+        background-color: var(--cor-01);
         color: white;
         font-size: 0.6em;
         text-align: center;
         padding: 15px;
         a{
-            color: rgb(176, 176, 176);
+            color: var(--cor-02);
             &:hover{
-                color: rgba(155, 109, 22, 0.816);
+                color: var(--cor-03);
             }
         }
     }
