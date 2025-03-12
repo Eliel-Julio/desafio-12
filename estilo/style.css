@@ -58,6 +58,7 @@ body{
                 }
             }
             &.imagem{
+                box-shadow: inset 0px 10px 15px rgba(0, 0, 0, 0.5);
                 background-color: darkgray;
                 background-image: url();
                 color: white;
